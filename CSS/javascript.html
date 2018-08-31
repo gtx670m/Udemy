@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        // document.getElementById('myButton').onclick = function() {
+        //     document.getElementById('demo').innerHTML = 'HELLO!';
+        // }
+        var size = 10;
+        function sayHello() {
+            const demo = document.getElementById('demo');
+            demo.innerHTML = 'HELLO!';
+            demo.style.color = 'red';
+            const btn = document.createElement("BUTTON");
+            const t = document.createTextNode("BOOM!");
+            btn.appendChild(t);
+            btn.style.width = "100px";
+            btn.style.height = "100px";
+            btn.style.backgroundColor = "red";
+            document.body.appendChild(btn);
+        }
+        function bigger() {
+            const demo = document.getElementById('demo');
+            demo.innerHTML = "BIGGER!!!";
+            size += 5;
+            demo.style.fontSize = `${size.toString()}px`;
+        }
+        function del() {
+            const demo = document.getElementById('demo');
+            demo.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="sayHello()">
+        Click me!
+    </button>
+    <button onclick="bigger()">
+        +
+    </button>
+    <button onclick="del()">
+        x
+    </button>
+    <h1 id="demo"></h1>
+</body>
+
+</html>

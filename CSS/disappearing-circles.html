@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Disappearing Circles
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script>
+        function clickRed() {
+            document.getElementById('red-circle').style.display="none";
+        }
+    </script>
+    <style>
+        .circle {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        #red-circle {
+            background-color: red;
+        }
+
+        #blue-circle {
+            background-color: blue;
+        }
+
+        #yellow-circle {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red-circle" class="circle" onclick="clickRed()"></div>
+    <div id="blue-circle" class="circle"></div>
+    <div id="yellow-circle" class="circle"></div>
+</body>
+
+</html>

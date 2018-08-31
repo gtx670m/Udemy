@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Text Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        p {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bold {
+            font-weight: bold;
+            text-align: right
+        }
+
+        .italic {
+            font-style: italic;
+            text-align: center
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: green;
+            font-size: 200%;
+        }
+
+        a:visited {
+            color: gray
+        }
+
+        a:active {
+            font-size: 150%;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="bold">This is some bold text!</p>
+    <p class="italic">This is some italic text!</p>
+    <p class="italic">
+        <span class="bold"> This is some bold-italic text!</span>
+    </p>
+    <p class="underline">This is some underline text!</p>
+    <a href="http://google.com">This is a link</a>
+    <br>
+    <a href="http://google.com" target="_blank">This is a link open in new tab</a>
+    <div style="width: 500px;height: 200px; background-color: green">
+        <p style="text-align: right">RIGHT</p>
+        <p style="text-align: center">CENTER</p>
+        <p style="text-align: left">LEFT</p>
+        <p style="text-align: justify;font-size: 20px">10h50 ngày 23/7, đại diện tổ công tác của Bộ Giáo dục và Bộ Công an thông tin "không họp báo lúc 11h" như đã công
+            bố.
+        </p>
+
+    </div>
+</body>
+
+</html>

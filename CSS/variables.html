@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Variable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript">
+        function show() {
+            const editText = document.getElementById('edtText');
+            var text = editText.value;
+            const screen = document.getElementById('show-here');
+            screen.innerHTML = `Xin chao ${text}`;
+        }
+    </script>
+</head>
+
+<body>
+    <input id="edtText" type="text" placeholder="type something here" autofocus>
+    <button onclick="show()">Click me!</button>
+    <p id="show-here"></p>
+</body>
+
+</html>

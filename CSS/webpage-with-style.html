@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Webpage With Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+        h1 {
+            color: purple;
+            font-size: 100%
+        }
+
+        .internalCSS-class {
+            color: orange;
+            font-size: 40px
+        }
+
+        #internalCSS-id {
+            color: navy;
+            font-size: 30px;
+            border-color: rgb(47, 0, 255);
+            border-width: 2px;
+            border-style: double;
+            position: fixed
+        }
+
+        .underline {
+            text-decoration: underline
+        }
+
+        .first-section {
+            color: mediumvioletred;
+            text-align: right;
+            text-decoration: underline;
+            font-size: 30px;
+            text-align: left;
+            width: 300px;
+            float: right;
+        }
+
+        #second-section {
+            color: yellow;
+            font-size: 20px;
+            background-color: black;
+            width: 50%;
+            text-align: right;
+            float: left;
+            position: relative;
+            z-index: 2;
+            opacity: 0.5;
+            margin: 100px;
+            padding: 30px;
+        }
+
+        #third-section {
+            background-color: blue;
+            color: red;
+            position: absolute;
+            left: 200px;
+            top: 70px
+        }
+
+        #fourth-section {
+            background-color: brown;
+            position: relative;
+            left: -100px;
+            top: -150px;
+            z-index: 1;
+            opacity: 1;
+            width: 300px;
+            padding: 50px
+        }
+
+        .clear-float {
+            clear: both
+        }
+
+        body {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color: rgb(255, 0, 0); font-size: 50px;font-family: Arial, Helvetica, sans-serif; text-align: right">
+        Inline CSS
+    </p>
+    <h1>Internal CSS</h1>
+    <p class="internalCSS-class">internalCSS-class</p>
+    <p id="internalCSS-id">internalCSS-id.
+        <br>
+        <span class="underline">Underline this text.</span>
+    </p>
+    <hr>
+    <div class="first-section">
+        <p>Tính năng chống nước hiện đang được xem là tiêu chuẩn trên các dòng smartphone đầu bảng của những thương hiệu nổi
+            tiếng.
+        </p>
+
+    </div>
+    <div id="second-section">
+        <p>Tiêu chuẩn chống bụi và nước của các điện thoại này ở mức IP67, IP68. Trong đó số 6 diễn giải cho việc thiết bị được
+            đảm bảo chống bụi hoàn toàn, đảm bảo hoạt động tốt trong môi trường nhiều bụi và số 7 hoặc 8 theo sau là khả
+            năng chống nước.</p>
+
+    </div>
+    <div class="clear-float"></div>
+    <p>This paragraph is not floated!</p>
+    <div id="third-section">
+        <p>Theo đó các mẫu smartphone IP67, IP68 có thể ngâm mình ở độ sâu 1 mét nước với thời gian lên đến 30 phút (IPx7) hoặc
+            cao hơn thế (IPx8).</p>
+    </div>
+    <div id="fourth-section">
+        <p>Từ đầu năm 2018, những nhà sản xuất quen thuộc không hề bỏ qua tính năng này trên các sản phẩm của mình.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+#container {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+
+}
+
+#purple {
+    width: 100%;
+    height: 50%;
+    background-color: purple;
+    position: relative;
+
+}
+
+#red {
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+
+#orange {
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    float: left;
+}
+
+#green {
+    width: 25%;
+    height: 100%;
+    background-color: green;
+    float: left;
+}
+
+#yellow {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: yellow;
+
+}
+
+#blue #yellow {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: yellow;
+}
+
+#blue {
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+}
+
+.border {
+    border: 5px black solid;
+}
